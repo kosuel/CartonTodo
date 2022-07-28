@@ -30,7 +30,7 @@ class LogInController: UIViewController {
             return
         }
         
-        LoginManager.shared.isLogin = true
+        LogInManager.shared.isLogin = true
     }
 
     override func resignFirstResponder() -> Bool {

@@ -43,7 +43,7 @@ class TodoListViewController: UIViewController{
     }
     
     @IBAction func logOutAction(_ sender: Any) {
-        LoginManager.shared.isLogin = false
+        LogInManager.shared.isLogin = false
     }
 }
 

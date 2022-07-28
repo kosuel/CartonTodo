@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let sceneDelegate = scene?.delegate as? SceneDelegate,
               let window = sceneDelegate.window else { return }
 
-        let viewController = LoginManager.shared.isLogin ? TodoListViewController.instantiateInitialViewController() : UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+        let viewController = LogInManager.shared.isLogin ? TodoListViewController.instantiateInitialViewController() : UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
         window.rootViewController = viewController
 
         let options: UIView.AnimationOptions = .transitionCrossDissolve
@@ -34,7 +34,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         
-        let viewController = LoginManager.shared.isLogin ? TodoListViewController.instantiateInitialViewController() : UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+        let viewController = LogInManager.shared.isLogin ? TodoListViewController.instantiateInitialViewController() : UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
         window.rootViewController = viewController
 
         self.window = window
