@@ -6,17 +6,39 @@
 //
 
 import UIKit
+import NotificationObserverHelper
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
+    /// auto unregister observer
+    var notificationObserver = NotificationObserver(.default, name: .loginChanged) { _ in
+        
+        let scene = UIApplication.shared.connectedScenes.first
+        
+        guard let sceneDelegate = scene?.delegate as? SceneDelegate,
+              let window = sceneDelegate.window else { return }
 
+        let viewController = LoginManager.shared.isLogin ? TodoListViewController.instantiateInitialViewController() : UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+        window.rootViewController = viewController
+
+        let options: UIView.AnimationOptions = .transitionCrossDissolve
+        let duration: TimeInterval = 0.35
+        
+        UIView.transition(with: window, duration: duration, options: options, animations: {}, completion:nil)
+    }
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        let window = UIWindow(windowScene: windowScene)
+        
+        let viewController = LoginManager.shared.isLogin ? TodoListViewController.instantiateInitialViewController() : UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+        window.rootViewController = viewController
+
+        self.window = window
+        window.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
