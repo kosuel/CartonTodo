@@ -10,13 +10,23 @@ import Combine
 
 /// view model for TodoListViewController
 class TodoListViewModel{
-    private var todos: [TodoItem]
     
-    private var publisher = PassthroughSubject<Int, Never>()
+    /// servcie for loading and saving todos
+    private var storageService: StorageService
+    
+    private var todos: [TodoItem] = []
+    
+    private var cellPublisher = PassthroughSubject<Int, Never>()
+    private var tablePublisher = PassthroughSubject<Void, Never>()
     
     /// when todos is changed, publisher emits cell index. tableview can update specific row.
     var cellChangePublisher: AnyPublisher<Int, Never> {
-        publisher.eraseToAnyPublisher()
+        cellPublisher.eraseToAnyPublisher()
+    }
+    
+    /// reload whole tableview
+    var tableChangePublisher: AnyPublisher<Void, Never> {
+        tablePublisher.eraseToAnyPublisher()
     }
     
     var numOfItems: Int{
@@ -34,8 +44,18 @@ class TodoListViewModel{
         return ProgressViewModel(from: todos)
     }
     
-    init(todos: [TodoItem]) {
-        self.todos = todos
+    init(storageService: StorageService) {
+        self.storageService = storageService
+        
+        storageService.load { [weak self] todos in
+            self?.todos = todos
+            self?.tablePublisher.send()
+        }
+    }
+    
+    /// save changes
+    deinit {
+        storageService.save( todos )
     }
 
     /// change todo completion and send signal to subscribers.
@@ -46,8 +66,8 @@ class TodoListViewModel{
         todoItem.completed = !todoItem.completed
         
         todos[itemIndex] = todoItem
-        
-        publisher.send(itemIndex)
+
+        cellPublisher.send(itemIndex)
     }
     
     private func findTodoItem(ofId id:String) -> Int? {
