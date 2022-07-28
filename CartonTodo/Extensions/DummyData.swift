@@ -9,7 +9,7 @@ import Foundation
 
 extension TodoListViewModel{
     
-    static var dummyViewModel: Self {
+    static var dummyViewModel: TodoListViewModel {
         return TodoListViewModel(todos: [TodoItem(userId: "1", id: "1", title: "buy an apple", completed: false),
                                          TodoItem(userId: "1", id: "2", title: "wash my car", completed: true),
                                          TodoItem(userId: "1", id: "3", title: "call mom", completed: true),
