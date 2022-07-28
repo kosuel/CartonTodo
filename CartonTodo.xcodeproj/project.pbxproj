@@ -23,7 +23,7 @@
 		245519A728926A4400039347 /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245519A628926A4400039347 /* TodoListViewModel.swift */; };
 		245519A928926BB700039347 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245519A828926BB700039347 /* DummyData.swift */; };
 		245519AB28926DE900039347 /* TodoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245519AA28926DE900039347 /* TodoListCell.swift */; };
-		245519AD2892A37300039347 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245519AC2892A37300039347 /* LoginManager.swift */; };
+		245519AD2892A37300039347 /* LogInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245519AC2892A37300039347 /* LogInManager.swift */; };
 		247CC4AB2892C49D00949195 /* TodoProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247CC4AA2892C49D00949195 /* TodoProgressView.swift */; };
 		247CC4AD2892C4DA00949195 /* TodoProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247CC4AC2892C4DA00949195 /* TodoProgressView.xib */; };
 		247CC4AF2892CA1100949195 /* TodoListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247CC4AE2892CA1100949195 /* TodoListCellViewModel.swift */; };
@@ -48,7 +48,7 @@
 		245519A628926A4400039347 /* TodoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
 		245519A828926BB700039347 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		245519AA28926DE900039347 /* TodoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListCell.swift; sourceTree = "<group>"; };
-		245519AC2892A37300039347 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		245519AC2892A37300039347 /* LogInManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInManager.swift; sourceTree = "<group>"; };
 		247CC4AA2892C49D00949195 /* TodoProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoProgressView.swift; sourceTree = "<group>"; };
 		247CC4AC2892C4DA00949195 /* TodoProgressView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoProgressView.xib; sourceTree = "<group>"; };
 		247CC4AE2892CA1100949195 /* TodoListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListCellViewModel.swift; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				245519812892535100039347 /* LogInController.swift */,
-				245519AC2892A37300039347 /* LoginManager.swift */,
+				245519AC2892A37300039347 /* LogInManager.swift */,
 			);
 			path = LogInController;
 			sourceTree = "<group>";
@@ -322,7 +322,7 @@
 				245519A228926A1300039347 /* TodoModel.swift in Sources */,
 				2455199E289268F700039347 /* TodoListViewController.swift in Sources */,
 				245519AB28926DE900039347 /* TodoListCell.swift in Sources */,
-				245519AD2892A37300039347 /* LoginManager.swift in Sources */,
+				245519AD2892A37300039347 /* LogInManager.swift in Sources */,
 				2455199A289266A400039347 /* UIColor.swift in Sources */,
 				245519822892535100039347 /* LogInController.swift in Sources */,
 				245519A928926BB700039347 /* DummyData.swift in Sources */,
