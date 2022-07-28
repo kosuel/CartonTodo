@@ -24,7 +24,15 @@ class TodoListViewController: UIViewController{
         
         viewModel.cellChangePublisher
             .sink { [weak self] cellIndex in
-                self?.tableView.reloadRows(at: [IndexPath(row: cellIndex, section: 0)], with: .automatic)
+                guard let self = self else { return }
+                
+                // update cell
+                self.tableView.reloadRows(at: [IndexPath(row: cellIndex, section: 0)], with: .automatic)
+                
+                // update remains view
+                guard let headerView = self.tableView.headerView(forSection: 0) as? TodoProgressView else { return }
+                
+                headerView.configure(withViewModel: self.viewModel.progressViewModel())
             }
             .store(in: &cancels)
         
@@ -53,6 +61,18 @@ extension TodoListViewController: UITableViewDataSource, UITableViewDelegate{
         cell.configure(withViewModel: viewModel.cellViewModel(at: indexPath.row))
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let todoProgressView = TodoProgressView.instantiateFromNib()
+        
+        todoProgressView.configure(withViewModel: viewModel.progressViewModel())
+        
+        return todoProgressView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        44
     }
 }
 
