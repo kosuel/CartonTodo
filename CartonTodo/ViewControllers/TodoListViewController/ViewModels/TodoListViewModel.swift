@@ -42,7 +42,7 @@ class TodoListViewModel{
     func cellViewModel(at: Int) -> TodoListCellViewModel{
         let todoItem = todos[at]
         
-        return TodoListCellViewModel(parentViewModel: self, model: todoItem)
+        return TodoListCellViewModel(model: todoItem, toggleHandler: toggleComplete(ofId:))
     }
 
     func progressViewModel() -> ProgressViewModel {
