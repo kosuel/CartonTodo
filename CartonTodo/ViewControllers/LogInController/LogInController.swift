@@ -29,6 +29,8 @@ class LogInController: UIViewController {
             
             return
         }
+        
+        LoginManager.shared.isLogin = true
     }
 
     override func resignFirstResponder() -> Bool {

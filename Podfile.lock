@@ -1,0 +1,16 @@
+PODS:
+  - NotificationObserverHelper (1.2)
+
+DEPENDENCIES:
+  - NotificationObserverHelper
+
+SPEC REPOS:
+  trunk:
+    - NotificationObserverHelper
+
+SPEC CHECKSUMS:
+  NotificationObserverHelper: 17d690a2d9f02a1ffa7b55babd6a7ca96d1733c5
+
+PODFILE CHECKSUM: f36478a4bb90fc75135c43616b3eeba80f20b767
+
+COCOAPODS: 1.11.3

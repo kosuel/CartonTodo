@@ -19,6 +19,12 @@ class TodoListViewController: UIViewController{
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Log out", comment: ""), style: .plain, target: self, action: #selector(logOutAction(_:)))
+    }
+    
+    @IBAction func logOutAction(_ sender: Any) {
+        LoginManager.shared.isLogin = false
     }
 }
 
