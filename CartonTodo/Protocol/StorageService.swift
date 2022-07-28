@@ -14,3 +14,30 @@ protocol StorageService{
     
     func save(_ todos:[TodoItem])
 }
+
+// file I/O helper
+extension StorageService{
+    
+    private var fileURL: URL{
+        return FileManager.default.documentsDirectory.appendingPathComponent("todos.json")
+    }
+    
+    func loadFromFile() -> [TodoItem]?{
+
+        guard let data = try? Data(contentsOf: fileURL),
+              let savedTodos = try? JSONDecoder().decode([TodoItem].self, from: data) else { return nil }
+
+        return savedTodos
+    }
+    
+    func saveToFile(_ todos:[TodoItem]) {
+        
+        do{
+            let data = try JSONEncoder().encode(todos)
+            try data.write(to: fileURL)
+        }
+        catch{
+            print("can't save todos to disk")
+        }
+    }
+}

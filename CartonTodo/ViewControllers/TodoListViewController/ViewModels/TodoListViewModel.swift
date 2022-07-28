@@ -14,6 +14,8 @@ class TodoListViewModel{
     /// servcie for loading and saving todos
     private var storageService: StorageService
     
+    @Published var isLoading = true
+    
     private var todos: [TodoItem] = []
     
     private var cellPublisher = PassthroughSubject<Int, Never>()
@@ -33,6 +35,10 @@ class TodoListViewModel{
         todos.count
     }
 
+    var numOfCompleted: Int{
+        todos.filter { $0.completed == true }.count
+    }
+    
     func cellViewModel(at: Int) -> TodoListCellViewModel{
         let todoItem = todos[at]
         
@@ -48,8 +54,10 @@ class TodoListViewModel{
         self.storageService = storageService
         
         storageService.load { [weak self] todos in
+            
             self?.todos = todos
             self?.tablePublisher.send()
+            self?.isLoading = false
         }
     }
     
