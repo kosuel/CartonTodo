@@ -16,6 +16,12 @@
 		245519962892635B00039347 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245519952892635B00039347 /* UIViewController.swift */; };
 		245519982892638300039347 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245519972892638300039347 /* UIButton.swift */; };
 		2455199A289266A400039347 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24551999289266A400039347 /* UIColor.swift */; };
+		2455199E289268F700039347 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2455199D289268F700039347 /* TodoListViewController.swift */; };
+		245519A02892694B00039347 /* TodoListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2455199F2892694B00039347 /* TodoListViewController.storyboard */; };
+		245519A228926A1300039347 /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245519A128926A1300039347 /* TodoModel.swift */; };
+		245519A728926A4400039347 /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245519A628926A4400039347 /* TodoListViewModel.swift */; };
+		245519A928926BB700039347 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245519A828926BB700039347 /* DummyData.swift */; };
+		245519AB28926DE900039347 /* TodoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245519AA28926DE900039347 /* TodoListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +36,12 @@
 		245519952892635B00039347 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		245519972892638300039347 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		24551999289266A400039347 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		2455199D289268F700039347 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
+		2455199F2892694B00039347 /* TodoListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TodoListViewController.storyboard; sourceTree = "<group>"; };
+		245519A128926A1300039347 /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		245519A628926A4400039347 /* TodoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
+		245519A828926BB700039347 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		245519AA28926DE900039347 /* TodoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +77,7 @@
 				245519942892634700039347 /* Extensions */,
 				24551991289260D400039347 /* Delegates */,
 				24551993289260F400039347 /* Storyboards */,
-				24551992289260E600039347 /* LogInController */,
+				2455199B289268BC00039347 /* ViewControllers */,
 				245519862892535200039347 /* Assets.xcassets */,
 				2455198B2892535200039347 /* Info.plist */,
 			);
@@ -104,8 +116,46 @@
 				245519952892635B00039347 /* UIViewController.swift */,
 				245519972892638300039347 /* UIButton.swift */,
 				24551999289266A400039347 /* UIColor.swift */,
+				245519A828926BB700039347 /* DummyData.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2455199B289268BC00039347 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				24551992289260E600039347 /* LogInController */,
+				2455199C289268CA00039347 /* TodoListViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2455199C289268CA00039347 /* TodoListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				245519A428926A2400039347 /* ViewModels */,
+				245519A328926A1700039347 /* Models */,
+				2455199D289268F700039347 /* TodoListViewController.swift */,
+				245519AA28926DE900039347 /* TodoListCell.swift */,
+				2455199F2892694B00039347 /* TodoListViewController.storyboard */,
+			);
+			path = TodoListViewController;
+			sourceTree = "<group>";
+		};
+		245519A328926A1700039347 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				245519A128926A1300039347 /* TodoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		245519A428926A2400039347 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				245519A628926A4400039347 /* TodoListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +219,7 @@
 				2455198A2892535200039347 /* LaunchScreen.storyboard in Resources */,
 				245519872892535200039347 /* Assets.xcassets in Resources */,
 				245519852892535100039347 /* Main.storyboard in Resources */,
+				245519A02892694B00039347 /* TodoListViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,9 +230,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				245519A728926A4400039347 /* TodoListViewModel.swift in Sources */,
 				245519982892638300039347 /* UIButton.swift in Sources */,
+				245519A228926A1300039347 /* TodoModel.swift in Sources */,
+				2455199E289268F700039347 /* TodoListViewController.swift in Sources */,
+				245519AB28926DE900039347 /* TodoListCell.swift in Sources */,
 				2455199A289266A400039347 /* UIColor.swift in Sources */,
 				245519822892535100039347 /* LogInController.swift in Sources */,
+				245519A928926BB700039347 /* DummyData.swift in Sources */,
 				2455197E2892535100039347 /* AppDelegate.swift in Sources */,
 				245519962892635B00039347 /* UIViewController.swift in Sources */,
 				245519802892535100039347 /* SceneDelegate.swift in Sources */,
