@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Combine
 
 class TodoListViewController: UIViewController{
     
@@ -14,8 +15,18 @@ class TodoListViewController: UIViewController{
     
     @IBOutlet weak var tableView: UITableView!
     
+    private var cancels = Set<AnyCancellable>()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = NSLocalizedString("Todos", comment: "")
+        
+        viewModel.cellChangePublisher
+            .sink { [weak self] cellIndex in
+                self?.tableView.reloadRows(at: [IndexPath(row: cellIndex, section: 0)], with: .automatic)
+            }
+            .store(in: &cancels)
         
         tableView.delegate = self
         tableView.dataSource = self

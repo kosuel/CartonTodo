@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// single todo item
 struct TodoItem{
     var userId: String
     var id: String
