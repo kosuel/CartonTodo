@@ -10,9 +10,9 @@ import UIKit
 
 /// view model for TodoListCell. this view model takes responsibility of toggle event and delegates button event to parent view model
 struct TodoListCellViewModel{
-    private let parentViewModel: TodoListViewModel
     private let model: TodoItem
-
+    private let toggleHandler: (_ todoId: String)->Void
+    
     var title: String {
         model.title
     }
@@ -26,11 +26,11 @@ struct TodoListCellViewModel{
     }
 
     func toggleComplete(){
-        parentViewModel.toggleComplete(ofId: model.id)
+        toggleHandler(model.id)
     }
     
-    init(parentViewModel:TodoListViewModel, model:TodoItem){
-        self.parentViewModel = parentViewModel
+    init(model:TodoItem, toggleHandler: @escaping (_ todoId: String)->Void){
         self.model = model
+        self.toggleHandler = toggleHandler
     }
 }

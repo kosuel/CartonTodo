@@ -11,7 +11,7 @@ import Combine
 
 class TodoListViewController: UIViewController{
     
-    private var viewModel = TodoListViewModel.dummyViewModel
+    private var viewModel = TodoListViewModel(storageService: ExampleStorageService())
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -21,7 +21,24 @@ class TodoListViewController: UIViewController{
         super.viewDidLoad()
         
         title = NSLocalizedString("Todos", comment: "")
+
+        setupBind()
         
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Log out", comment: ""), style: .plain, target: self, action: #selector(logOutAction(_:)))
+    }
+    
+    private func setupBind(){
+        /// subscribe whole data changing
+        viewModel.tableChangePublisher
+            .sink { [weak self] in
+                self?.tableView.reloadData()
+            }
+            .store(in: &cancels)
+        
+        /// specific row change observing
         viewModel.cellChangePublisher
             .sink { [weak self] cellIndex in
                 guard let self = self else { return }
@@ -35,11 +52,6 @@ class TodoListViewController: UIViewController{
                 headerView.configure(withViewModel: self.viewModel.progressViewModel())
             }
             .store(in: &cancels)
-        
-        tableView.delegate = self
-        tableView.dataSource = self
-        
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Log out", comment: ""), style: .plain, target: self, action: #selector(logOutAction(_:)))
     }
     
     @IBAction func logOutAction(_ sender: Any) {
