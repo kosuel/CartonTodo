@@ -205,8 +205,8 @@
 				2455199D289268F700039347 /* TodoListViewController.swift */,
 				245519AA28926DE900039347 /* TodoListCell.swift */,
 				247CC4AA2892C49D00949195 /* TodoProgressView.swift */,
-				247CC4AC2892C4DA00949195 /* TodoProgressView.xib */,
 				2455199F2892694B00039347 /* TodoListViewController.storyboard */,
+				247CC4AC2892C4DA00949195 /* TodoProgressView.xib */,
 			);
 			path = TodoListViewController;
 			sourceTree = "<group>";

@@ -17,6 +17,7 @@ class TodoListViewModel{
     @Published var isLoading = true
     
     private var todos: [TodoItem] = []
+    private var filtedTodos: [TodoItem] = [] /// filtered by title
     
     private var cellPublisher = PassthroughSubject<Int, Never>()
     private var tablePublisher = PassthroughSubject<Void, Never>()
@@ -32,7 +33,7 @@ class TodoListViewModel{
     }
     
     var numOfItems: Int{
-        todos.count
+        filtedTodos.count
     }
 
     var numOfCompleted: Int{
@@ -40,7 +41,7 @@ class TodoListViewModel{
     }
     
     func cellViewModel(at: Int) -> TodoListCellViewModel{
-        let todoItem = todos[at]
+        let todoItem = filtedTodos[at]
         
         return TodoListCellViewModel(model: todoItem, toggleHandler: toggleComplete(ofId:))
     }
@@ -56,6 +57,7 @@ class TodoListViewModel{
         storageService.load { [weak self] todos in
             
             self?.todos = todos
+            self?.filtedTodos = todos
             self?.tablePublisher.send()
             self?.isLoading = false
         }
@@ -70,14 +72,40 @@ class TodoListViewModel{
 
     /// change todo completion and send signal to subscribers.
     func toggleComplete(ofId id:String){
-        guard let itemIndex = findTodoItem(ofId: id) else { return }
+        
+        // toggle original todos
+        guard let itemIndex = todos.firstIndex(where:{ item in
+            item.id == id
+        }) else { return }
         
         var todoItem = todos[itemIndex]
         todoItem.completed = !todoItem.completed
         
         todos[itemIndex] = todoItem
 
-        cellPublisher.send(itemIndex)
+        // toggle filted todos
+        if let itemIndex = filtedTodos.firstIndex(where:{ item in
+            item.id == id
+        }) {
+            var todoItem = filtedTodos[itemIndex]
+            todoItem.completed = !todoItem.completed
+            
+            filtedTodos[itemIndex] = todoItem
+            
+            cellPublisher.send(itemIndex)
+        }
+    }
+    
+    /// filter todos with title
+    func filter(withTitle title:String?){
+        if let title = title, title.isEmpty == false {
+            filtedTodos = todos.filter { $0.title.localizedCaseInsensitiveContains(title)}
+        }
+        else{
+            filtedTodos = todos
+        }
+        
+        tablePublisher.send()
     }
     
     private func findTodoItem(ofId id:String) -> Int? {

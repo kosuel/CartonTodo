@@ -13,7 +13,8 @@ class TodoListViewController: UIViewController{
     
     private var viewModel = TodoListViewModel(storageService: NetworkDataStorage())
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!    
+    @IBOutlet weak var searchBar: UISearchBar!
     
     private var cancels = Set<AnyCancellable>()
     
@@ -26,6 +27,7 @@ class TodoListViewController: UIViewController{
         
         tableView.delegate = self
         tableView.dataSource = self
+        searchBar.delegate = self
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Log out", comment: ""), style: .plain, target: self, action: #selector(logOutAction(_:)))
     }
@@ -87,6 +89,19 @@ extension TodoListViewController: UITableViewDataSource, UITableViewDelegate{
         44
     }
 }
+
+extension TodoListViewController: UISearchBarDelegate{
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        viewModel.filter(withTitle: searchText)
+    }
+
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        viewModel.filter(withTitle: nil)
+        
+        searchBar.resignFirstResponder()
+    }
+}
+
 
 extension TodoListViewController{
     
