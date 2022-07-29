@@ -11,7 +11,7 @@ import Combine
 
 class TodoListViewController: UIViewController{
     
-    private var viewModel = TodoListViewModel(storageService: ExampleStorageService())
+    private var viewModel = TodoListViewModel(storageService: NetworkDataStorage())
     
     @IBOutlet weak var tableView: UITableView!
     

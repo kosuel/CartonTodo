@@ -35,4 +35,8 @@ class ExampleStorageService : StorageService{
     func save(_ todos:[TodoItem]) {
         saveToFile(todos)
     }
+    
+    func resetCache(){
+        /// no cache
+    }
 }

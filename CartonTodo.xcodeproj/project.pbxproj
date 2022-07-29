@@ -31,6 +31,8 @@
 		247CC4BC289321A000949195 /* ExampleDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247CC4BB289321A000949195 /* ExampleDataStorage.swift */; };
 		247CC4BE2893255F00949195 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247CC4BD2893255F00949195 /* FileManager.swift */; };
 		247CC4C62893298400949195 /* CartonTodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247CC4C52893298400949195 /* CartonTodoTests.swift */; };
+		247CC4CD289351C400949195 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247CC4CC289351C400949195 /* URLSession.swift */; };
+		247CC4CF2893520000949195 /* NetworkDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247CC4CE2893520000949195 /* NetworkDataStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		247CC4BD2893255F00949195 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		247CC4C32893298400949195 /* CartonTodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CartonTodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		247CC4C52893298400949195 /* CartonTodoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartonTodoTests.swift; sourceTree = "<group>"; };
+		247CC4CC289351C400949195 /* URLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		247CC4CE2893520000949195 /* NetworkDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataStorage.swift; sourceTree = "<group>"; };
 		42AC9943942B5F16869BBF3B /* Pods-CartonTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CartonTodo.release.xcconfig"; path = "Target Support Files/Pods-CartonTodo/Pods-CartonTodo.release.xcconfig"; sourceTree = "<group>"; };
 		A585C89458EF6D3A1DCC61E9 /* Pods-CartonTodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CartonTodo.debug.xcconfig"; path = "Target Support Files/Pods-CartonTodo/Pods-CartonTodo.debug.xcconfig"; sourceTree = "<group>"; };
 		DADDA13DBC2E29F6D70CC2DF /* Pods_CartonTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CartonTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +179,7 @@
 		245519942892634700039347 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				247CC4CC289351C400949195 /* URLSession.swift */,
 				245519952892635B00039347 /* UIViewController.swift */,
 				245519972892638300039347 /* UIButton.swift */,
 				24551999289266A400039347 /* UIColor.swift */,
@@ -237,6 +242,7 @@
 			children = (
 				245519AC2892A37300039347 /* LogInManager.swift */,
 				247CC4BB289321A000949195 /* ExampleDataStorage.swift */,
+				247CC4CE2893520000949195 /* NetworkDataStorage.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -409,7 +415,9 @@
 				245519AB28926DE900039347 /* TodoListCell.swift in Sources */,
 				245519AD2892A37300039347 /* LogInManager.swift in Sources */,
 				2455199A289266A400039347 /* UIColor.swift in Sources */,
+				247CC4CF2893520000949195 /* NetworkDataStorage.swift in Sources */,
 				245519822892535100039347 /* LogInController.swift in Sources */,
+				247CC4CD289351C400949195 /* URLSession.swift in Sources */,
 				2455197E2892535100039347 /* AppDelegate.swift in Sources */,
 				245519962892635B00039347 /* UIViewController.swift in Sources */,
 				245519802892535100039347 /* SceneDelegate.swift in Sources */,
