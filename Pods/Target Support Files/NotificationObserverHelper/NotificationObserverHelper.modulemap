@@ -1,0 +1,6 @@
+framework module NotificationObserverHelper {
+  umbrella header "NotificationObserverHelper-umbrella.h"
+
+  export *
+  module * { export * }
+}
