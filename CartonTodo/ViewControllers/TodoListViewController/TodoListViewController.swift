@@ -15,6 +15,7 @@ class TodoListViewController: UIViewController{
     
     @IBOutlet weak var tableView: UITableView!    
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     private var cancels = Set<AnyCancellable>()
     
@@ -52,6 +53,15 @@ class TodoListViewController: UIViewController{
                 guard let headerView = self.tableView.headerView(forSection: 0) as? TodoProgressView else { return }
                 
                 headerView.configure(withViewModel: self.viewModel.progressViewModel())
+            }
+            .store(in: &cancels)
+        
+        viewModel.$isLoading
+            .sink { [weak self] loading in
+                guard let self = self else { return }
+                
+                self.activityIndicator.isHidden = !loading
+                self.tableView.isHidden = loading
             }
             .store(in: &cancels)
     }
