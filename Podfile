@@ -6,4 +6,5 @@ target 'CartonTodo' do
 
   # Pods for CartonTodo
   pod 'NotificationObserverHelper'
+  pod 'GenericJSON'
 end

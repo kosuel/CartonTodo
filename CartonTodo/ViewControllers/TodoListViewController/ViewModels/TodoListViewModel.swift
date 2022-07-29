@@ -63,7 +63,9 @@ class TodoListViewModel{
     
     /// save changes
     deinit {
-        storageService.save( todos )
+        if todos.isEmpty == false {
+            storageService.save( todos )
+        }
     }
 
     /// change todo completion and send signal to subscribers.

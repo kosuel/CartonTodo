@@ -7,55 +7,89 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11B3D9E1BCDF1845ADA160D822E686E5 /* NotificationObserverHelper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCE3F6275F5CCFECA3A20EF2D0BD4EF /* NotificationObserverHelper-dummy.m */; };
-		59BE2FD268569D1D26CD64A9A5CBF23B /* Pods-CartonTodo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C46EFE30B11C62C8BEAA166C5D0793AC /* Pods-CartonTodo-dummy.m */; };
-		643FBC43D5E98F3CD27E4FFF1A96C75F /* NotificationObserverHelper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 502AA59975D33409622C1098145AE9CF /* NotificationObserverHelper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		656FE80173BBB0FA0A29E94E27224294 /* Pods-CartonTodo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C98EBA937216764E69E925651D2ED6D1 /* Pods-CartonTodo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A704D8F6CE92EE428FD8028BA42B8D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		8C43D8CD51622019E4B5508109289AD1 /* NotificationObserverHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5989E989F6803B2BF060E8A8E112FD62 /* NotificationObserverHelper.swift */; };
+		06CFDAA95056BB9483394F9B2738D78F /* Pods-CartonTodo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C98EBA937216764E69E925651D2ED6D1 /* Pods-CartonTodo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11B3D9E1BCDF1845ADA160D822E686E5 /* NotificationObserverHelper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61ED57E53B946A8EB62C825D2D5CE579 /* NotificationObserverHelper-dummy.m */; };
+		3BDA1FFFF9F85ED59032F5E32B8EACDD /* Merging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194B77C0677743746E8E5C096E27F501 /* Merging.swift */; };
+		423726EEE981CD05FBB9366679F4DFFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		4CF186A07A749990AF512296480CD007 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EF0756BC797B498FAE735DAFD4AFFE /* JSON.swift */; };
+		643FBC43D5E98F3CD27E4FFF1A96C75F /* NotificationObserverHelper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B3F99E7179C21B9B3D94D72D6679D19D /* NotificationObserverHelper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C43D8CD51622019E4B5508109289AD1 /* NotificationObserverHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415EBC3060F2532D7EE6A87CE02AF977 /* NotificationObserverHelper.swift */; };
+		948FC699147E9E76095BCB0CD12C00DE /* Pods-CartonTodo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C46EFE30B11C62C8BEAA166C5D0793AC /* Pods-CartonTodo-dummy.m */; };
+		9E8B48571A7A51C9B4DBBF58D2474E54 /* GenericJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 705C2690F9DE481F79B47413CBC6B754 /* GenericJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA070192CF2C8E1C36AAA95CE473BAE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		B256AD49154180925A825CD73D3ABDBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D68C0725B7E048D9D281BFEBAB3E3B81 /* GenericJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69781F9E28869638BE98AB3604404647 /* GenericJSON-dummy.m */; };
+		DC4791670B7042044DD1759C7AEA2282 /* Querying.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FD503F178C3B8546B345F45FAA2A3F /* Querying.swift */; };
+		E6352194173704209D99E15978432DF2 /* Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986DB4B7E91047D0B99E8AC2E5074AF4 /* Initialization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F9A2EA870CB9E238E7835144786AE3A5 /* PBXContainerItemProxy */ = {
+		2F2C6A3BA9889D4EED72F24E7B405607 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CA1912E3D67ACBBAC5D90A7E2D963C83;
 			remoteInfo = NotificationObserverHelper;
 		};
+		DFCD583CC7CE2C9929771C895D77A881 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F18A768FDF4947B6325776051521D6D;
+			remoteInfo = GenericJSON;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		169116FEDD8BD919793D937B43A25117 /* NotificationObserverHelper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NotificationObserverHelper-Info.plist"; sourceTree = "<group>"; };
-		28458A2D71DD0D09B3D6FDFEA1B5C91E /* NotificationObserverHelper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NotificationObserverHelper-prefix.pch"; sourceTree = "<group>"; };
-		3CCE3F6275F5CCFECA3A20EF2D0BD4EF /* NotificationObserverHelper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NotificationObserverHelper-dummy.m"; sourceTree = "<group>"; };
-		3DC553A7E13C5D78C7699D4DF9B763E4 /* NotificationObserverHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NotificationObserverHelper.debug.xcconfig; sourceTree = "<group>"; };
+		0DD2C4E7D31466457422F2788122D2F0 /* GenericJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GenericJSON.modulemap; sourceTree = "<group>"; };
+		10EF0756BC797B498FAE735DAFD4AFFE /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = GenericJSON/JSON.swift; sourceTree = "<group>"; };
+		11E07E0A5FE00C2F2C67A2184CAED84E /* GenericJSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GenericJSON.release.xcconfig; sourceTree = "<group>"; };
+		1392CD06FE960287F804E351E5E3A27C /* NotificationObserverHelper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NotificationObserverHelper-prefix.pch"; sourceTree = "<group>"; };
+		194B77C0677743746E8E5C096E27F501 /* Merging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Merging.swift; path = GenericJSON/Merging.swift; sourceTree = "<group>"; };
+		32FDB879CA660E416DDB2809B8081AF4 /* NotificationObserverHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NotificationObserverHelper.debug.xcconfig; sourceTree = "<group>"; };
+		415EBC3060F2532D7EE6A87CE02AF977 /* NotificationObserverHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationObserverHelper.swift; path = NotificationObserverHelper/NotificationObserverHelper.swift; sourceTree = "<group>"; };
 		4F314760B0025EC26D5CFD00BF02F88E /* Pods-CartonTodo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CartonTodo.modulemap"; sourceTree = "<group>"; };
-		502AA59975D33409622C1098145AE9CF /* NotificationObserverHelper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NotificationObserverHelper-umbrella.h"; sourceTree = "<group>"; };
-		5989E989F6803B2BF060E8A8E112FD62 /* NotificationObserverHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationObserverHelper.swift; path = NotificationObserverHelper/NotificationObserverHelper.swift; sourceTree = "<group>"; };
-		68880913D201474CA6938D9ACC2372B7 /* NotificationObserverHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NotificationObserverHelper.release.xcconfig; sourceTree = "<group>"; };
+		4F4F9E1D41A6CAF78DAF75CFB40370F7 /* NotificationObserverHelper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NotificationObserverHelper-Info.plist"; sourceTree = "<group>"; };
+		61ED57E53B946A8EB62C825D2D5CE579 /* NotificationObserverHelper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NotificationObserverHelper-dummy.m"; sourceTree = "<group>"; };
+		69781F9E28869638BE98AB3604404647 /* GenericJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GenericJSON-dummy.m"; sourceTree = "<group>"; };
+		705C2690F9DE481F79B47413CBC6B754 /* GenericJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GenericJSON-umbrella.h"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7B2CF7567AD20B9D7BE123E10267E69F /* Pods-CartonTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CartonTodo.release.xcconfig"; sourceTree = "<group>"; };
 		879EA1DA480B73D35F70D20B263598F4 /* NotificationObserverHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NotificationObserverHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A8ECA4C4A327DE0C2E8FB6863617E9F /* NotificationObserverHelper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NotificationObserverHelper.modulemap; sourceTree = "<group>"; };
+		9295955EF932CF58A65F17D9F7BCCE36 /* GenericJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GenericJSON-Info.plist"; sourceTree = "<group>"; };
+		986DB4B7E91047D0B99E8AC2E5074AF4 /* Initialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Initialization.swift; path = GenericJSON/Initialization.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2088F008AA756C985EDCF08BDF61F9F /* Pods-CartonTodo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CartonTodo-frameworks.sh"; sourceTree = "<group>"; };
 		A41652171BBC6EDB5A37FE23DD931E97 /* Pods-CartonTodo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CartonTodo-acknowledgements.plist"; sourceTree = "<group>"; };
+		B02AD2AEDC6228AFCB99EF146E6603E2 /* GenericJSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GenericJSON.debug.xcconfig; sourceTree = "<group>"; };
+		B3F99E7179C21B9B3D94D72D6679D19D /* NotificationObserverHelper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NotificationObserverHelper-umbrella.h"; sourceTree = "<group>"; };
 		B5EE21593E648376392BC64914FFA3A8 /* Pods-CartonTodo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CartonTodo-Info.plist"; sourceTree = "<group>"; };
 		C46EFE30B11C62C8BEAA166C5D0793AC /* Pods-CartonTodo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CartonTodo-dummy.m"; sourceTree = "<group>"; };
 		C94473E52B7CF12E2F9AFD084F1778AD /* Pods-CartonTodo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CartonTodo"; path = Pods_CartonTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98EBA937216764E69E925651D2ED6D1 /* Pods-CartonTodo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CartonTodo-umbrella.h"; sourceTree = "<group>"; };
+		D0AB9694BED39B2AA67B2D8CA93FAC30 /* NotificationObserverHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NotificationObserverHelper.release.xcconfig; sourceTree = "<group>"; };
 		D86BA02B2ACE740D4E04FBE0912CA35D /* Pods-CartonTodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CartonTodo.debug.xcconfig"; sourceTree = "<group>"; };
+		E19A59E6C49E1C2C769F9FC950D3CCF2 /* NotificationObserverHelper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NotificationObserverHelper.modulemap; sourceTree = "<group>"; };
 		F28C116A089F1B41D361D2C58EDC3EA3 /* Pods-CartonTodo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CartonTodo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F2B414DC38838D221640F1457BA0321E /* GenericJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GenericJSON-prefix.pch"; sourceTree = "<group>"; };
+		F4FD503F178C3B8546B345F45FAA2A3F /* Querying.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Querying.swift; path = GenericJSON/Querying.swift; sourceTree = "<group>"; };
+		F629CE6C9A9092A215DE9415EA54DF90 /* GenericJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GenericJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3DB43CDA7165C4E06A5134225B4589FF /* Frameworks */ = {
+		5B6DB3ED31D809FA15557E944718C04F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A704D8F6CE92EE428FD8028BA42B8D4 /* Foundation.framework in Frameworks */,
+				423726EEE981CD05FBB9366679F4DFFD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		676CD928A35D0D22BC2CC9520F7812AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA070192CF2C8E1C36AAA95CE473BAE4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,36 +104,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01FAB2EC297F26DE11952853450CB199 /* NotificationObserverHelper */ = {
+		01871936109139F24C4A5754E05DCA02 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5989E989F6803B2BF060E8A8E112FD62 /* NotificationObserverHelper.swift */,
-				26B7EC176318F29B76D95E16A281EE5F /* Support Files */,
+				0DD2C4E7D31466457422F2788122D2F0 /* GenericJSON.modulemap */,
+				69781F9E28869638BE98AB3604404647 /* GenericJSON-dummy.m */,
+				9295955EF932CF58A65F17D9F7BCCE36 /* GenericJSON-Info.plist */,
+				F2B414DC38838D221640F1457BA0321E /* GenericJSON-prefix.pch */,
+				705C2690F9DE481F79B47413CBC6B754 /* GenericJSON-umbrella.h */,
+				B02AD2AEDC6228AFCB99EF146E6603E2 /* GenericJSON.debug.xcconfig */,
+				11E07E0A5FE00C2F2C67A2184CAED84E /* GenericJSON.release.xcconfig */,
 			);
-			path = NotificationObserverHelper;
+			name = "Support Files";
+			path = "../Target Support Files/GenericJSON";
 			sourceTree = "<group>";
 		};
-		150411F55B3F907B00A5E1688646D30A /* Pods */ = {
+		049E55557598C41787614CC4848B7D21 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				01FAB2EC297F26DE11952853450CB199 /* NotificationObserverHelper */,
+				F629CE6C9A9092A215DE9415EA54DF90 /* GenericJSON.framework */,
+				879EA1DA480B73D35F70D20B263598F4 /* NotificationObserverHelper.framework */,
+				C94473E52B7CF12E2F9AFD084F1778AD /* Pods-CartonTodo */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		316A8F106E0279457B55507076166E36 /* GenericJSON */ = {
+			isa = PBXGroup;
+			children = (
+				986DB4B7E91047D0B99E8AC2E5074AF4 /* Initialization.swift */,
+				10EF0756BC797B498FAE735DAFD4AFFE /* JSON.swift */,
+				194B77C0677743746E8E5C096E27F501 /* Merging.swift */,
+				F4FD503F178C3B8546B345F45FAA2A3F /* Querying.swift */,
+				01871936109139F24C4A5754E05DCA02 /* Support Files */,
+			);
+			path = GenericJSON;
+			sourceTree = "<group>";
+		};
+		31CE39033ACFC33D8C68119215136C2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				316A8F106E0279457B55507076166E36 /* GenericJSON */,
+				4DB8990D7D0AD9EB322EDD6CF1C43422 /* NotificationObserverHelper */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		26B7EC176318F29B76D95E16A281EE5F /* Support Files */ = {
+		4DB8990D7D0AD9EB322EDD6CF1C43422 /* NotificationObserverHelper */ = {
 			isa = PBXGroup;
 			children = (
-				9A8ECA4C4A327DE0C2E8FB6863617E9F /* NotificationObserverHelper.modulemap */,
-				3CCE3F6275F5CCFECA3A20EF2D0BD4EF /* NotificationObserverHelper-dummy.m */,
-				169116FEDD8BD919793D937B43A25117 /* NotificationObserverHelper-Info.plist */,
-				28458A2D71DD0D09B3D6FDFEA1B5C91E /* NotificationObserverHelper-prefix.pch */,
-				502AA59975D33409622C1098145AE9CF /* NotificationObserverHelper-umbrella.h */,
-				3DC553A7E13C5D78C7699D4DF9B763E4 /* NotificationObserverHelper.debug.xcconfig */,
-				68880913D201474CA6938D9ACC2372B7 /* NotificationObserverHelper.release.xcconfig */,
+				415EBC3060F2532D7EE6A87CE02AF977 /* NotificationObserverHelper.swift */,
+				757A204988B9EBDA80858D4BB326C2CB /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/NotificationObserverHelper";
+			path = NotificationObserverHelper;
 			sourceTree = "<group>";
 		};
 		4FC570EF6253C484B0605DB2F086826A /* Targets Support Files */ = {
@@ -135,13 +192,19 @@
 			path = "Target Support Files/Pods-CartonTodo";
 			sourceTree = "<group>";
 		};
-		99B4DED0A1F148466A27B4C81F31B8F7 /* Products */ = {
+		757A204988B9EBDA80858D4BB326C2CB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				879EA1DA480B73D35F70D20B263598F4 /* NotificationObserverHelper.framework */,
-				C94473E52B7CF12E2F9AFD084F1778AD /* Pods-CartonTodo */,
+				E19A59E6C49E1C2C769F9FC950D3CCF2 /* NotificationObserverHelper.modulemap */,
+				61ED57E53B946A8EB62C825D2D5CE579 /* NotificationObserverHelper-dummy.m */,
+				4F4F9E1D41A6CAF78DAF75CFB40370F7 /* NotificationObserverHelper-Info.plist */,
+				1392CD06FE960287F804E351E5E3A27C /* NotificationObserverHelper-prefix.pch */,
+				B3F99E7179C21B9B3D94D72D6679D19D /* NotificationObserverHelper-umbrella.h */,
+				32FDB879CA660E416DDB2809B8081AF4 /* NotificationObserverHelper.debug.xcconfig */,
+				D0AB9694BED39B2AA67B2D8CA93FAC30 /* NotificationObserverHelper.release.xcconfig */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/NotificationObserverHelper";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -149,8 +212,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				150411F55B3F907B00A5E1688646D30A /* Pods */,
-				99B4DED0A1F148466A27B4C81F31B8F7 /* Products */,
+				31CE39033ACFC33D8C68119215136C2A /* Pods */,
+				049E55557598C41787614CC4848B7D21 /* Products */,
 				4FC570EF6253C484B0605DB2F086826A /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -174,30 +237,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		54F505FC36F583B33E95C3BA4AC29968 /* Headers */ = {
+		72A4EF017DA9C06B39813F568638F2CC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				656FE80173BBB0FA0A29E94E27224294 /* Pods-CartonTodo-umbrella.h in Headers */,
+				9E8B48571A7A51C9B4DBBF58D2474E54 /* GenericJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72D9E617B847BE8434346E01DB309B72 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06CFDAA95056BB9483394F9B2738D78F /* Pods-CartonTodo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		911DCB8EA7D8A4A159902E3458F1031A /* Pods-CartonTodo */ = {
+		7F18A768FDF4947B6325776051521D6D /* GenericJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D61D11EDE7CBB8C4AD3E18E5AA20E543 /* Build configuration list for PBXNativeTarget "Pods-CartonTodo" */;
+			buildConfigurationList = 80FC1DF717490B24A5BC1EA0A195E900 /* Build configuration list for PBXNativeTarget "GenericJSON" */;
 			buildPhases = (
-				54F505FC36F583B33E95C3BA4AC29968 /* Headers */,
-				806D66992E8418EB0EB89D112F9C40C1 /* Sources */,
-				3DB43CDA7165C4E06A5134225B4589FF /* Frameworks */,
-				F3575961C6253C06C9740BF7BE817A2C /* Resources */,
+				72A4EF017DA9C06B39813F568638F2CC /* Headers */,
+				D2284447A30E4E46A18ECBF7BFF4DD03 /* Sources */,
+				676CD928A35D0D22BC2CC9520F7812AA /* Frameworks */,
+				13B8C7B0F495A2D1F194134E3679197E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				99DA2492680780BA86C2243B5264CACA /* PBXTargetDependency */,
+			);
+			name = GenericJSON;
+			productName = GenericJSON;
+			productReference = F629CE6C9A9092A215DE9415EA54DF90 /* GenericJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		911DCB8EA7D8A4A159902E3458F1031A /* Pods-CartonTodo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C9504B41AF2DCD7FFDA4265BF5FA88 /* Build configuration list for PBXNativeTarget "Pods-CartonTodo" */;
+			buildPhases = (
+				72D9E617B847BE8434346E01DB309B72 /* Headers */,
+				04BE647BC9CEF3BD49A7C87B27884AEA /* Sources */,
+				5B6DB3ED31D809FA15557E944718C04F /* Frameworks */,
+				4DDDE6D109C30A6E2EC1A773D88B96E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D43276D5B5A053A5C482E383D4777F1A /* PBXTargetDependency */,
+				96913D58333EF8989AD34695BE232F4C /* PBXTargetDependency */,
 			);
 			name = "Pods-CartonTodo";
 			productName = Pods_CartonTodo;
@@ -231,6 +321,9 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					7F18A768FDF4947B6325776051521D6D = {
+						LastSwiftMigration = 1340;
+					};
 					CA1912E3D67ACBBAC5D90A7E2D963C83 = {
 						LastSwiftMigration = 1340;
 					};
@@ -245,10 +338,11 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 99B4DED0A1F148466A27B4C81F31B8F7 /* Products */;
+			productRefGroup = 049E55557598C41787614CC4848B7D21 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				7F18A768FDF4947B6325776051521D6D /* GenericJSON */,
 				CA1912E3D67ACBBAC5D90A7E2D963C83 /* NotificationObserverHelper */,
 				911DCB8EA7D8A4A159902E3458F1031A /* Pods-CartonTodo */,
 			);
@@ -256,14 +350,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		787412EA7E8D2C6CE86C3523407A9D61 /* Resources */ = {
+		13B8C7B0F495A2D1F194134E3679197E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3575961C6253C06C9740BF7BE817A2C /* Resources */ = {
+		4DDDE6D109C30A6E2EC1A773D88B96E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787412EA7E8D2C6CE86C3523407A9D61 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -273,6 +374,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		04BE647BC9CEF3BD49A7C87B27884AEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948FC699147E9E76095BCB0CD12C00DE /* Pods-CartonTodo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		06B5B80875FF90B227BCBA2FE7058FFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,29 +391,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		806D66992E8418EB0EB89D112F9C40C1 /* Sources */ = {
+		D2284447A30E4E46A18ECBF7BFF4DD03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59BE2FD268569D1D26CD64A9A5CBF23B /* Pods-CartonTodo-dummy.m in Sources */,
+				D68C0725B7E048D9D281BFEBAB3E3B81 /* GenericJSON-dummy.m in Sources */,
+				E6352194173704209D99E15978432DF2 /* Initialization.swift in Sources */,
+				4CF186A07A749990AF512296480CD007 /* JSON.swift in Sources */,
+				3BDA1FFFF9F85ED59032F5E32B8EACDD /* Merging.swift in Sources */,
+				DC4791670B7042044DD1759C7AEA2282 /* Querying.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		99DA2492680780BA86C2243B5264CACA /* PBXTargetDependency */ = {
+		96913D58333EF8989AD34695BE232F4C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NotificationObserverHelper;
 			target = CA1912E3D67ACBBAC5D90A7E2D963C83 /* NotificationObserverHelper */;
-			targetProxy = F9A2EA870CB9E238E7835144786AE3A5 /* PBXContainerItemProxy */;
+			targetProxy = 2F2C6A3BA9889D4EED72F24E7B405607 /* PBXContainerItemProxy */;
+		};
+		D43276D5B5A053A5C482E383D4777F1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GenericJSON;
+			target = 7F18A768FDF4947B6325776051521D6D /* GenericJSON */;
+			targetProxy = DFCD583CC7CE2C9929771C895D77A881 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		39575C20AE0ABC0D45503FB8E9777701 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68880913D201474CA6938D9ACC2372B7 /* NotificationObserverHelper.release.xcconfig */;
+			baseConfigurationReference = D0AB9694BED39B2AA67B2D8CA93FAC30 /* NotificationObserverHelper.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -338,9 +457,80 @@
 			};
 			name = Release;
 		};
+		414A1B0BD54C42DAE67373B4218E5A79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11E07E0A5FE00C2F2C67A2184CAED84E /* GenericJSON.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GenericJSON/GenericJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GenericJSON/GenericJSON-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GenericJSON/GenericJSON.modulemap";
+				PRODUCT_MODULE_NAME = GenericJSON;
+				PRODUCT_NAME = GenericJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6EFC0C4B86DF6B89D588C9C765FE929F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B02AD2AEDC6228AFCB99EF146E6603E2 /* GenericJSON.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GenericJSON/GenericJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GenericJSON/GenericJSON-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GenericJSON/GenericJSON.modulemap";
+				PRODUCT_MODULE_NAME = GenericJSON;
+				PRODUCT_NAME = GenericJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		77422BCA435C77A3AD0403CC58C26CF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DC553A7E13C5D78C7699D4DF9B763E4 /* NotificationObserverHelper.debug.xcconfig */;
+			baseConfigurationReference = 32FDB879CA660E416DDB2809B8081AF4 /* NotificationObserverHelper.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -373,7 +563,7 @@
 			};
 			name = Debug;
 		};
-		81A2923F6C4B42905DAD6960BCC7EFDD /* Debug */ = {
+		8B6C3CFFC01C27903865C02F59F2FA9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D86BA02B2ACE740D4E04FBE0912CA35D /* Pods-CartonTodo.debug.xcconfig */;
 			buildSettings = {
@@ -538,7 +728,7 @@
 			};
 			name = Release;
 		};
-		9FD95A544AFF149F4A833D8C0542F7B4 /* Release */ = {
+		A0A7D8FA34DC95E97197B992AB407DDB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7B2CF7567AD20B9D7BE123E10267E69F /* Pods-CartonTodo.release.xcconfig */;
 			buildSettings = {
@@ -597,11 +787,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D61D11EDE7CBB8C4AD3E18E5AA20E543 /* Build configuration list for PBXNativeTarget "Pods-CartonTodo" */ = {
+		80FC1DF717490B24A5BC1EA0A195E900 /* Build configuration list for PBXNativeTarget "GenericJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				81A2923F6C4B42905DAD6960BCC7EFDD /* Debug */,
-				9FD95A544AFF149F4A833D8C0542F7B4 /* Release */,
+				6EFC0C4B86DF6B89D588C9C765FE929F /* Debug */,
+				414A1B0BD54C42DAE67373B4218E5A79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C9504B41AF2DCD7FFDA4265BF5FA88 /* Build configuration list for PBXNativeTarget "Pods-CartonTodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B6C3CFFC01C27903865C02F59F2FA9E /* Debug */,
+				A0A7D8FA34DC95E97197B992AB407DDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

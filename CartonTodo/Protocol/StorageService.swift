@@ -13,9 +13,12 @@ protocol StorageService{
     func load(completion: @escaping ([TodoItem])->Void )
     
     func save(_ todos:[TodoItem])
+    
+    ///  remove local save or memory cache
+    func resetCache()
 }
 
-// file I/O helper
+/// file I/O helper
 extension StorageService{
     
     private var fileURL: URL{
@@ -38,6 +41,15 @@ extension StorageService{
         }
         catch{
             print("can't save todos to disk")
+        }
+    }
+    
+    func removeLocalFile() {
+        do{
+            try FileManager.default.removeItem(at: fileURL)
+        }
+        catch{
+            print(error)
         }
     }
 }

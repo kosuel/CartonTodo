@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-CartonTodo/Pods-CartonTodo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/GenericJSON/GenericJSON.framework
 ${BUILT_PRODUCTS_DIR}/NotificationObserverHelper/NotificationObserverHelper.framework

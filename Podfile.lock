@@ -1,16 +1,20 @@
 PODS:
+  - GenericJSON (2.0.1)
   - NotificationObserverHelper (1.2)
 
 DEPENDENCIES:
+  - GenericJSON
   - NotificationObserverHelper
 
 SPEC REPOS:
   trunk:
+    - GenericJSON
     - NotificationObserverHelper
 
 SPEC CHECKSUMS:
+  GenericJSON: a6e74e2c457f8693caab08e0eafde7d97e6666de
   NotificationObserverHelper: 17d690a2d9f02a1ffa7b55babd6a7ca96d1733c5
 
-PODFILE CHECKSUM: f36478a4bb90fc75135c43616b3eeba80f20b767
+PODFILE CHECKSUM: 1400b151cd101d054b9934ec723ecd51c41d7b5e
 
 COCOAPODS: 1.11.3
